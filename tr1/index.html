@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Leonel Messi</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <section class="hero">
+        <div class="main-width">
+            <header>
+                <div class="logo">
+                    <h1>
+                        Messipedia
+                    </h1>
+                </div>
+
+            <nav>
+                <div class="hamb">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="nav-list">
+                    <ul>
+                        <li><a href="">Biografia</a></li>
+                        <li><a href="#sec">Trofeos</a></li>
+                        <li><a href="#ter">Equipos</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </header>
+        <div class="login-box">
+            <h2>Iniciar Sesión</h2>
+            <form action="#" method="post">
+                <label for="usuario">User</label>
+                <input type="text" placeholder="Ingresa tu Usuario" name="usuario" id="isUser">
+                <label for="contraseña">Password</label>
+                <input type="password" placeholder="Ingresa tu contraseña" name="contraseña" id="isPwd">
+                <button type="submit">Iniciar sesión</button>
+                <section class="mb-5">
+                    <center>
+                        <button type="button" id="modal_button" class="btn btn-info">Registrarse</button>
+                    </center>
+                </section>
+            </form>
+            <style>
+                .login-box {
+                position: absolute;
+                top: 50%;
+                right: 10%;
+                transform: translateY(-50%);
+                width: 300px;
+                background-color: rgba(255, 255, 255, 0.8);
+                padding: 20px;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+                border-radius: 10px;
+                }
+
+                .login-box h2 {
+                text-align: center;
+                margin-bottom: 20px;
+                }
+
+                .login-box input[type="text"],
+                .login-box input[type="password"],
+                .login-box button[type="submit"] {
+                display: block;
+                width: 90%;
+                margin-bottom: 40px;
+                padding: 10px;
+                margin-left: 0px;
+                border-radius: 5px;
+                border: none;
+                background-color: #f2f2f2;
+                }
+                .login-box button[type="button"] {
+                display: block;
+                width: 80%;
+                margin-bottom: 40px;
+                padding: 10px;
+                margin-left: -25px;
+                border-radius: 5px;
+                border: none;
+                background-color: #f2f2f2;
+                }
+
+                .login-box button[type="submit"] {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+                }
+
+                .login-box button[type="submit"]:hover {
+                background-color: #45a049;
+                }
+                .login-box button[type="button"] {
+                background-color: #4CAF50;
+                color: white;
+                cursor: pointer;
+                }
+
+                .login-box button[type="button"]:hover {
+                background-color: #45a049;
+                }
+            </style>
+        </div>
+
+        <div class="container">
+            <div class="hero-text">
+                <h1>Lionel Messi <span class="input">GOAT</span></h1>
+                <h4>Greatest Player of all Time</h4>
+            </div>
+            <div class="social">
+                <a target="_blank" href="https://twitter.com/Messismo10?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa-brands fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/leomessi/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a target="_blank" href="https://www.facebook.com/leomessi/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <i><p>
+                Unico futbolista en la historia que ha ganado,entre otras distinciones,<br> siete veces el Balón de Oro, seis premios de la FIFA al mejor jugador del mundo <br> seis Botas de Oro y un Mundial.
+            </p></i>
+            <a href="https://www.youtube.com/watch?v=VmfLN-9aHRM" target="_blank">
+                <button type="button">Mejores Goles >>></button>
+            </a>
+        </div>
+    </div>
+    </section>
+
+    <section class="container2" id="sec">
+        <div class="card">
+            <div class="imgBx">
+                <img src="balon2-removebg-preview.png" width="100%" alt="">
+            </div>
+            <div class="contentBx">
+                <h2> 7 balones de Oro</h2>
+                <h3>AÑO >>></h3>
+                <div class="year">
+                    <span>2009- </span>
+                    <span>2010- </span>
+                    <span>2011- </span>
+                    <span>2012- </span>
+                    <span>2015- </span>
+                    <span>2018- </span>
+                    <span>2021</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="imgBx2">
+                <img src="bota-de-oro-removebg-preview.png" width="100%" alt="">
+            </div>
+            <div class="contentBx2">
+                <h2> 6 Botas de Oro</h2>
+                <h3>AÑO >>></h3>
+                <div class="year2">
+                    <span>2009- </span>
+                    <span>2011- </span>
+                    <span>2012- </span>
+                    <span>2016- </span>
+                    <span>2017- </span>
+                    <span>2018</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="card2">
+            <div class="imgBx2">
+                <img src="THE_BEST-removebg-preview.png" width="100%" alt="">
+            </div>
+            <div class="contentBx2">
+                <h2> 6 PREMIOS FIFA</h2>
+                <h3>AÑO >>></h3>
+                <div class="year2">
+                    <span>2009- </span>
+                    <span>2011- </span>
+                    <span>2012- </span>
+                    <span>2016- </span>
+                    <span>2017- </span>
+                    <span>2018</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container3" id="ter">
+        <center><h1>EQUIPOS:</h1></center>
+        <div class="box">
+            <h2 class="name">FC BARCELONA</h2>
+            <a href="https://www.fcbarcelona.es/es/ficha/2214377/leo-messi" target="_blank" class="buy">WEB PAGE</a>
+            <div class="circle"></div>
+            <img src="barcelona.png" class="team">
+        </div>
+
+        <div class="box">
+            <h2 class="name">PSG</h2>
+            <a href="https://es.psg.fr/equipos/primer-equipo/plantilla/lionel-messi" target="_blank" class="buy">WEB PAGE</a>
+            <div class="circle"></div>
+            <img src="psg.png" class="team">
+        </div>\
+        <center></center>
+        <button>
+            <h1>
+                CLICK EN "WEB PAGE" para ver su informacion en cada club >>>>> 
+            </h1>
+        </button>
+
+    </div>
+
+    <script src="/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="vanilla-tilt.min.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".box"), {
+            max: 25,
+            speed: 400
+        });
+    </script>
+
+    <script>
+        var typed = new Typed(".input", {
+            strings:["GOAT.", "Genio.", "THE BEST.", "Magia."],
+            typeSpeed: 70,
+            backSpeed: 70,
+            loop: true 
+        });
+
+        var hamburger = document.querySelector(".hamb");
+        var navlist = document.querySelector(".nav-list");
+        var links = document.querySelector(".nav-list li");
+
+        hamburger.addEventListener("click", function(){
+        this.classList.toggle("click");
+        navlist.classList.toggle("open");
+        });
+
+        
+
+    </script>
+
+</body>
+</html>
+<div id="customerModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h4 class="modal-title">Registrarse</h4>
+            </div>
+            <div class="modal-body">
+                <div class="mt-2 mb-2">
+                    <label class="form-label">Correo</label>
+                    <input type="text" id="idCorreo" class="form-control" />
+                </div>
+            
+                <div class="mt-2 mb-2">
+                    <label class="form-label">Usuario</label>
+                    <input type="text" id="idUser" class="form-control" />
+                </div>
+
+                <div class="mt-2 mb-2">
+                    <label class="form-label">Contraseña</label>
+                    <input type="password" id="idPwd" class="form-control" />
+                </div>
+
+                <div class="mt-2 mb-2">
+                    <label class="form-label">Edad</label>
+                    <input type="number" id="idEdad" class="form-control" />
+                </div>
+            </div>
+            <div class="modal-footer">
+                <input type="hidden" id="idCod" />
+                <input type="submit" id="action" class="btn btn-success" />
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .modal-content {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+    }
+
+    .modal-title {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-control {
+        display: block;
+        width: 90%;
+        margin-bottom: 40px;
+        padding: 10px;
+        margin-left: 0px;
+        border-radius: 5px;
+        border: none;
+        background-color: #f2f2f2;
+    }
+
+    .btn-success {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn-success:hover {
+        background-color: #45a049;
+    }
+
+    .btn-secondary {
+        background-color: #4CAF50;
+        color: white;
+        cursor: pointer;
+    }
+
+    .btn-secondary:hover {
+        background-color: #45a049;
+    }
+</style>

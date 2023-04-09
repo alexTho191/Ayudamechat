@@ -1,0 +1,618 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Righteous&family=Work+Sans:wght@100;200;300;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,100&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: black;
+}
+
+.main-width{
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.hero{
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/messi.jpg);
+}
+
+header{
+    padding: 40px 0 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1{
+    color: white;
+}
+
+/*BARRA DE NAVEGACION*/
+
+nav .nav-list{
+    list-style: none;
+}
+
+nav .nav-list li{
+    display: inline-block;
+}
+
+nav .nav-list li a{
+    display: inline-block;
+    color: white;
+    margin-left: 45px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+
+nav .nav-list li a:hover{
+    background-color: white;
+    color: black;
+}
+
+/*BIOGRAFIA CONTAINER 1 */
+
+.container{
+    padding-top: 160px;
+    margin-left: 120px;
+}
+
+.container .hero-text{
+    margin-bottom: 90px;
+}
+
+.container .hero-text span{
+    color:#3062ce
+}
+
+.container .hero-text h4{
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 10px;
+}
+
+.container .hero-text h1{
+    color: white;
+    font-size: 47px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+span{
+    color: rgb(204, 230, 56);
+}
+
+.social a{
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    color: white;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin-bottom: 35px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.social a:hover{
+    transform: translateY(-6px);
+    color: black;
+    background-color: white;
+}
+
+.container .social{
+    margin-top: -90px;
+    color: white;
+}
+
+.container button{
+    color: white;
+    background: black;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 8px 30px;
+    border: 2px solid  rgb(56, 126, 230);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    margin-top: 30px;
+}
+
+.container button:hover{
+    transform: translateY(-6px);
+    color: white;
+    background-color:  rgb(56, 126, 230);
+}
+
+.container p{
+    color: white;
+    font-size: small;
+}
+
+/*TROFEOS CONTAINER 2*/
+
+.container2 {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/messi3.jpg);
+
+}
+
+.container2 .card{
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container2 .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(64, 131, 219);
+    clip-path: circle(170px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container2 .card:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container2 .card::after{
+    content: 'MESSI';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container2 .card .imgBx {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.8s;
+}
+
+.container2 .card:hover .imgBx{
+    top: 4%;
+    transform: translateY(0%);
+}
+
+.container2 .card .imgBx img{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotated(-25deg);
+    width: 270px;
+}
+
+.container2 .card .contentBx{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 0.8s;
+    z-index: 10;
+    color: white;
+}
+
+.container2 .card:hover .contentBx{
+    height: 210px;
+}
+
+.container2 .card .contentBx h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container2 .card .contentBx .year{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.container2 .card:hover .contentBx .year{
+    opacity: 1;
+    visibility: visible;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+.container2 .card2{
+    margin-left: 60px;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container2 .card2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(64, 131, 219);
+    clip-path: circle(170px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container2 .card2:hover:before{
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container2 .card2::after{
+    content: 'MESSI';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container2 .card2 .imgBx2 {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.8s;
+}
+
+.container2 .card2:hover .imgBx2{
+    top: 4%;
+    transform: translateY(0%);
+}
+
+.container2 .card2 .imgBx2 img{
+    position: absolute;
+    top: -10%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotated(-25deg);
+    width: 270px;
+}
+
+.container2 .card2 .contentBx2{
+    position: absolute;
+    bottom: 0;
+    max-width: 300px;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 0.8s;
+    z-index: 10;
+    color: white;
+}
+
+.container2 .card2:hover .contentBx2{
+    height: 210px;
+}
+
+.container2 .card2 .contentBx2 h2{
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container2 .card2 .contentBx2 .year2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.container2 .card2:hover .contentBx2 .year2{
+    opacity: 1;
+    visibility: visible;
+}
+
+.container3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 1200px;
+    transform-style: preserve-3d;
+}
+
+.container3 h1{
+    color: white;
+    margin: 10px;
+}
+
+.container3 p{
+    color: white;
+}
+
+.container3 button{
+    background-color: #1d80dd;
+    color: white;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+    transition: all 0.5s;
+}
+
+.container3 button:hover{
+    transform: translateY(-8px);
+}
+
+.container3 .box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    margin: 40px;
+    background: #232323;
+    border-radius: 20px;
+    transform-style: preserve-3d;
+}
+
+.container3 .box::before{
+    content: 'TEAMS';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 6em;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container3 .box::after{
+    content: 'TEAMS';
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 5em;
+    font-weight: 900;
+    color: white;
+    font-style: italic;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.container3 .box:hover::before,
+.container3 .box:hover::after{
+    opacity: 0.04;
+}
+
+.container3 .box .name{
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    color: white;
+    width: 100%;
+    transform-style: preserve-3d;
+    transform: translate3d(0,0,75px);
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container3 .box:hover .name{
+    top: 40px;
+    opacity: 1;
+}
+
+.container3 .box .buy{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%,0,75px);
+    color: white;
+    background: #232323;
+    padding: 10px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+.container3 .box:hover .buy{
+    bottom: 30px;
+    opacity: 1;
+}
+
+.container3 .box .circle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+    background: white;
+    transform-style: preserve-3d;
+    z-index: 10;
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 50px);
+}
+
+.container3 .box .team{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 300px;
+    transition: 0.5s;
+    z-index: 11;
+    transition: 0.5s;
+    transform-style: preserve-3d;
+    transform: translate3d(-50%, -50%, 50px) rotate(-15deg);
+}
+
+.container3 .box:hover .team{
+    transform: translate3d(-50%, -50%, 100px) rotate(-15deg);
+}
+
+
+.container3 .box:nth-child(1) .circle,
+.container3 .box:nth-child(1) .buy{
+    background: #1695b4;
+}
+
+.container3 .box:nth-child(2) .circle,
+.container3 .box:nth-child(2) .buy{
+
+    background: #206bc2;
+}
+
+
+
+
+
+
+
+
+nav .hamb{
+    width: 35px;
+    height: 24px;
+    right: 3%;
+    top: 60px;
+    z-index: 5;
+    background: transparent;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+}
+
+nav .hamb span{
+    display: block;
+    background: #1d80dd;
+    width: 100%;
+    height: 3px;
+    transition: .3s;
+    transition-property: transform, opacity;
+}
+
+nav .hamb span:nth-child(2){
+    margin: 7px 0px;
+}
+
+
+/*        RESPONSIVE      */
+
+@media screen and (max-width: 930px){
+    nav .hamb{
+        display: initial;
+    }
+    .click{
+        top: 46px;
+    }
+
+    .click span{
+        position: absolute;
+        margin-top: 12px;
+    }
+
+    .click span:first-child{
+        transform: rotate(-40deg);
+    }
+
+    .click span:nth-child(2){
+        opacity: 0;
+        margin: 0;
+    }
+
+    .click span:last-child{
+        transform: rotate(40deg);
+        top: 0;
+    }
+
+    nav .nav-list{
+        position: absolute;
+        top: 90px;
+        right: -65%;
+        bottom: 0;
+        width: 60%;
+        height: 50%;
+        background: rgb(17, 35, 68);
+        z-index: 2;
+        padding: 6% 9%;
+        transition: .3s right;
+        border-radius: 10px;
+    }
+
+    nav .nav-list.open{
+        right: 0;
+    }
+    
+}
